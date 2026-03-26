@@ -161,7 +161,7 @@ const About = () => (
         <p className="text-muted-foreground text-lg mb-10 max-w-xl mx-auto">
           Experience the difference of dental care delivered with genuine compassion. We'd love to welcome you.
         </p>
-        <a href="tel:+2349022211645" className="bg-gold-shimmer text-foreground px-10 py-4 rounded-full font-semibold inline-flex items-center gap-2 hover:opacity-90 transition-opacity text-lg">
+        <a href="tel:+2348062989492" className="bg-gold-shimmer text-foreground px-10 py-4 rounded-full font-semibold inline-flex items-center gap-2 hover:opacity-90 transition-opacity text-lg">
           <Phone className="w-5 h-5" /> Schedule Your Visit
         </a>
       </div>

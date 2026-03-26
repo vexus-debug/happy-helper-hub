@@ -17,7 +17,8 @@ const Contact = () => (
           <h2 className="font-display text-3xl font-bold text-foreground mb-8">Contact Information</h2>
           <div className="space-y-6">
             {[
-              { icon: Phone, label: "Phone", value: "+234 902 221 1645", href: "tel:+2349022211645" },
+              { icon: Phone, label: "Phone (Line 1)", value: "+234 902 221 1645", href: "tel:+2349022211645" },
+              { icon: Phone, label: "Phone (Line 2)", value: "+234 806 298 9492", href: "tel:+2348062989492" },
               { icon: MapPin, label: "Address", value: "Top Floor, Our Lady's Shopping Mall, 100 Airport Road, opposite Ugborikoko Junction, Effurun, Delta State" },
               { icon: Instagram, label: "Instagram", value: "Follow us on Instagram", href: "https://instagram.com" },
             ].map((c) => (
@@ -41,7 +42,7 @@ const Contact = () => (
             <h3 className="font-display text-xl font-bold text-foreground mb-4">Hours of Operation</h3>
             <div className="bg-secondary/50 rounded-xl p-6 space-y-3 text-sm">
               <div className="flex justify-between"><span className="text-muted-foreground">Monday – Friday</span><span className="font-semibold text-foreground">9:00 AM – 5:00 PM</span></div>
-              <div className="flex justify-between"><span className="text-muted-foreground">Saturday</span><span className="font-semibold text-foreground">10:00 AM – 4:00 PM</span></div>
+              <div className="flex justify-between"><span className="text-muted-foreground">Saturday</span><div className="flex justify-between"><span className="text-muted-foreground">Saturday</span><span className="font-semibold text-foreground">8:00 AM – 4:00 PM</span></div></div>
               <div className="flex justify-between"><span className="text-muted-foreground">Sunday</span><span className="font-semibold text-foreground">Closed</span></div>
             </div>
           </div>
