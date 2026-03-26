@@ -10,6 +10,16 @@ import caseBraces from "@/assets/case-braces.webp";
 import caseAlignment from "@/assets/case-alignment.webp";
 import caseBracesProgress from "@/assets/case-braces-progress.webp";
 import heroImg from "@/assets/hero-dental.jpg";
+import caseScalingAfter from "@/assets/case-scaling-after.jpg";
+import caseScalingBefore from "@/assets/case-scaling-before.jpg";
+import caseRestorationAfter from "@/assets/case-restoration-after.jpg";
+import caseRestorationBefore from "@/assets/case-restoration-before.jpg";
+import caseCavityBefore from "@/assets/case-cavity-before.jpg";
+import caseWhiteningAfter from "@/assets/case-whitening-after.jpg";
+import caseWhiteningBefore from "@/assets/case-whitening-before.jpg";
+import caseBondingAfter from "@/assets/case-bonding-after.jpg";
+import caseFillingBefore from "@/assets/case-filling-before.jpg";
+import caseFillingAfter from "@/assets/case-filling-after.jpg";
 
 const images = [
   { src: clinicReception, label: "Clinic Reception Area", category: "clinic" },
@@ -20,6 +30,16 @@ const images = [
   { src: caseScaling, label: "Before & After — Scaling & Polishing", category: "cases" },
   { src: caseOrtho, label: "Orthodontic Case Study", category: "cases" },
   { src: caseBracesProgress, label: "Braces Treatment In Progress", category: "cases" },
+  { src: caseScalingBefore, label: "Scaling — Before", category: "cases" },
+  { src: caseScalingAfter, label: "Scaling — After", category: "cases" },
+  { src: caseRestorationBefore, label: "Restoration — Before", category: "cases" },
+  { src: caseRestorationAfter, label: "Restoration — After", category: "cases" },
+  { src: caseCavityBefore, label: "Cavity Treatment — Before", category: "cases" },
+  { src: caseWhiteningBefore, label: "Teeth Whitening — Before", category: "cases" },
+  { src: caseWhiteningAfter, label: "Teeth Whitening — After", category: "cases" },
+  { src: caseBondingAfter, label: "Dental Bonding — After", category: "cases" },
+  { src: caseFillingBefore, label: "Dental Filling — Before", category: "cases" },
+  { src: caseFillingAfter, label: "Dental Filling — After", category: "cases" },
 ];
 
 const Gallery = () => {
