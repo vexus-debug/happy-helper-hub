@@ -16,7 +16,12 @@ import caseAlignment from "@/assets/case-alignment.webp";
 import caseBracesProgress from "@/assets/case-braces-progress.webp";
 import heroImg from "@/assets/hero-dental.jpg";
 import smileImg from "@/assets/happy-smile.jpg";
-import dentistImg from "@/assets/dentist-portrait.jpg";
+import caseWhiteningBefore from "@/assets/case-whitening-before.jpg";
+import caseWhiteningAfter from "@/assets/case-whitening-after.jpg";
+import caseDeepCleaningBefore from "@/assets/case-deep-cleaning-before.jpg";
+import caseDeepCleaningAfter from "@/assets/case-deep-cleaning-after.jpg";
+import caseScalingBefore from "@/assets/case-scaling-before.jpg";
+import caseScalingAfter from "@/assets/case-scaling-after.jpg";
 
 /* ─── Animate-on-scroll hook ─── */
 function useInView(threshold = 0.12) {
@@ -99,9 +104,15 @@ const reviews = [
 
 const transformations = [
   { src: caseBraces, label: "Orthodontic Transformation" },
+  { src: caseWhiteningAfter, label: "Teeth Whitening Result" },
+  { src: caseScalingAfter, label: "Deep Cleaning Result" },
   { src: caseAlignment, label: "Perfect Alignment" },
-  { src: caseScaling, label: "Deep Cleaning Results" },
-  { src: caseOrtho, label: "Smile Makeover" },
+];
+
+const beforeAfterCases = [
+  { before: caseDeepCleaningBefore, after: caseDeepCleaningAfter, title: "Deep Cleaning" },
+  { before: caseWhiteningBefore, after: caseWhiteningAfter, title: "Teeth Whitening" },
+  { before: caseScalingBefore, after: caseScalingAfter, title: "Scaling & Polishing" },
 ];
 
 const faqs = [
@@ -317,8 +328,49 @@ const Index = () => {
         </Section>
       </section>
 
-      {/* ════════════════════ OUR CLINIC ════════════════════ */}
+      {/* ════════════════════ BEFORE & AFTER SHOWCASE ════════════════════ */}
       <section className="px-4 md:px-8 lg:px-16 py-20 lg:py-28 overflow-hidden">
+        <Section>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-14">
+              <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-3">Real Patient Results</p>
+              <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground leading-tight">
+                Before & After <span className="text-gradient">Transformations</span>
+              </h2>
+              <p className="text-muted-foreground mt-4 max-w-xl mx-auto">Real results from real patients who trusted us with their smiles.</p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              {beforeAfterCases.map((c, i) => (
+                <Section key={c.title} delay={i * 120}>
+                  <div className="glass rounded-2xl overflow-hidden hover:shadow-xl transition-shadow">
+                    <div className="grid grid-cols-2">
+                      <div className="relative">
+                        <img src={c.before} alt={`${c.title} before`} className="w-full aspect-square object-cover" loading="lazy" />
+                        <span className="absolute bottom-2 left-2 bg-foreground/80 text-primary-foreground text-[10px] font-bold px-2 py-1 rounded-full uppercase">Before</span>
+                      </div>
+                      <div className="relative">
+                        <img src={c.after} alt={`${c.title} after`} className="w-full aspect-square object-cover" loading="lazy" />
+                        <span className="absolute bottom-2 right-2 bg-primary/90 text-primary-foreground text-[10px] font-bold px-2 py-1 rounded-full uppercase">After</span>
+                      </div>
+                    </div>
+                    <div className="p-4 text-center">
+                      <h3 className="font-display font-bold text-foreground">{c.title}</h3>
+                    </div>
+                  </div>
+                </Section>
+              ))}
+            </div>
+            <div className="text-center mt-10">
+              <Link to="/gallery" className="group text-primary font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all">
+                View Full Gallery <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </div>
+          </div>
+        </Section>
+      </section>
+
+      {/* ════════════════════ OUR CLINIC ════════════════════ */}
+      <section className="px-4 md:px-8 lg:px-16 py-20 lg:py-28 overflow-hidden bg-secondary/30">
         <Section>
           <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1">
@@ -365,7 +417,7 @@ const Index = () => {
       </section>
 
       {/* ════════════════════ TRANSFORMATIONS ════════════════════ */}
-      <section className="px-4 md:px-8 lg:px-16 py-20 lg:py-28 bg-secondary/30">
+      <section className="px-4 md:px-8 lg:px-16 py-20 lg:py-28">
         <Section>
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-14">
@@ -634,7 +686,7 @@ const Index = () => {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img src={smileImg} alt="Happy patient smiling" className="w-full h-full object-cover" loading="lazy" />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/92 via-primary/85 to-teal-deep/92" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/92 via-primary/85 to-blue-deep/92" />
         </div>
         <div className="absolute top-10 right-10 w-60 h-60 bg-gold/10 rounded-full blur-3xl" />
         <div className="relative z-10 px-4 md:px-8 lg:px-16 py-24 lg:py-32">

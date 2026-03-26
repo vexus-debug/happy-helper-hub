@@ -3,6 +3,8 @@ import { Shield, Sparkles, Scissors, Wrench, SmilePlus, Stethoscope, Phone, Cloc
 import { useState } from "react";
 import clinicImg from "@/assets/clinic-interior.webp";
 import clinicReception from "@/assets/clinic-reception.webp";
+import caseScalingAfter from "@/assets/case-scaling-after.jpg";
+import caseBondingAfter from "@/assets/case-bonding-after.jpg";
 
 const allServices = [
   {
@@ -10,7 +12,7 @@ const allServices = [
     category: "Preventive Care",
     tagline: "Keep your smile healthy",
     description: "Regular preventive care is the foundation of lasting oral health. Our gentle, thorough approach helps you avoid costly treatments down the line.",
-    color: "from-primary to-teal-deep",
+    color: "from-primary to-blue-deep",
     items: [
       { name: "Scaling and Polishing", duration: "45 min", desc: "Deep cleaning to remove plaque and tartar buildup" },
       { name: "Routine Dental Exams", duration: "30 min", desc: "Comprehensive check-up with digital X-rays" },
@@ -23,7 +25,7 @@ const allServices = [
     category: "Restorative Care",
     tagline: "Rebuild & restore with confidence",
     description: "When damage occurs, our advanced restorative solutions bring back both function and beauty to your teeth.",
-    color: "from-teal-deep to-primary",
+    color: "from-blue-deep to-primary",
     items: [
       { name: "Root Canal Treatment", duration: "90 min", desc: "Pain-free treatment to save infected teeth" },
       { name: "Dental Crowns", duration: "2 visits", desc: "Custom-fitted caps for damaged or weakened teeth" },
@@ -36,7 +38,7 @@ const allServices = [
     category: "Cosmetic Dentistry",
     tagline: "Shine brighter every day",
     description: "Transform your smile with our range of cosmetic procedures — designed to boost your confidence and leave a lasting impression.",
-    color: "from-primary to-teal-deep",
+    color: "from-primary to-blue-deep",
     items: [
       { name: "Professional Teeth Whitening", duration: "60 min", desc: "Clinical-grade whitening for dramatic results" },
       { name: "Veneers", duration: "2 visits", desc: "Porcelain shells for a flawless smile transformation" },
@@ -48,7 +50,7 @@ const allServices = [
     category: "Orthodontics",
     tagline: "Straighten your path to confidence",
     description: "Achieve perfectly aligned teeth with our orthodontic solutions — for patients of all ages.",
-    color: "from-teal-deep to-primary",
+    color: "from-blue-deep to-primary",
     items: [
       { name: "Metal Braces", duration: "12-24 months", desc: "Traditional braces for reliable teeth straightening" },
       { name: "Teeth Alignment", duration: "6-18 months", desc: "Customized alignment treatment for your bite" },
@@ -60,7 +62,7 @@ const allServices = [
     category: "Oral Surgery",
     tagline: "Expert surgical precision",
     description: "Our experienced team performs surgical procedures with the utmost care, precision, and patient comfort.",
-    color: "from-primary to-teal-deep",
+    color: "from-primary to-blue-deep",
     items: [
       { name: "Tooth Extraction", duration: "30 min", desc: "Safe and gentle removal of problematic teeth" },
       { name: "Surgical Procedures", duration: "Varies", desc: "Advanced surgical solutions for complex cases" },
@@ -72,7 +74,7 @@ const allServices = [
     category: "Prosthetics",
     tagline: "Complete your smile again",
     description: "Restore full function and aesthetics with our expertly crafted dental prosthetics — comfortable, durable, and natural-looking.",
-    color: "from-teal-deep to-primary",
+    color: "from-blue-deep to-primary",
     items: [
       { name: "Complete Dentures", duration: "3 visits", desc: "Full-arch replacements for a natural appearance" },
       { name: "Partial Dentures", duration: "2 visits", desc: "Removable solutions for partially missing teeth" },
@@ -90,7 +92,7 @@ const Services = () => {
       <section className="relative min-h-[70vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img src={clinicImg} alt="Our dental clinic" className="w-full h-full object-cover" loading="eager" />
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-teal-deep/90 to-primary/80" />
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/95 via-blue-deep/90 to-primary/80" />
         </div>
         <div className="relative z-10 w-full px-6 md:px-16 lg:px-24 py-20">
           <div className="max-w-3xl">
@@ -137,10 +139,9 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Active Service Detail — Immersive Layout */}
+      {/* Active Service Detail */}
       {allServices.map((service, idx) => (
         <div key={service.category} className={idx === activeCategory ? "block" : "hidden"}>
-          {/* Category Hero Banner */}
           <section className={`w-full bg-gradient-to-r ${service.color} px-6 md:px-16 lg:px-24 py-12 lg:py-16`}>
             <div className="flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-16">
               <div className="flex items-center gap-5">
@@ -160,7 +161,6 @@ const Services = () => {
             </div>
           </section>
 
-          {/* Service Cards — Elevated Design */}
           <section className="w-full px-6 md:px-16 lg:px-24 py-12 lg:py-20">
             <div className="grid md:grid-cols-2 gap-6">
               {service.items.map((item, itemIdx) => (
@@ -168,7 +168,6 @@ const Services = () => {
                   key={item.name}
                   className="group relative bg-card border border-border rounded-3xl overflow-hidden hover:shadow-2xl hover:border-primary/20 transition-all duration-300"
                 >
-                  {/* Number accent */}
                   <div className="absolute top-6 right-6 font-display text-6xl font-bold text-muted/30 select-none">
                     {String(itemIdx + 1).padStart(2, "0")}
                   </div>
@@ -219,7 +218,7 @@ const Services = () => {
         </div>
       ))}
 
-      {/* Why Choose Us — Social Proof */}
+      {/* Why Choose Us — with gallery images */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img src={clinicReception} alt="Clinic" className="w-full h-full object-cover" loading="lazy" />
@@ -259,8 +258,32 @@ const Services = () => {
         </div>
       </section>
 
+      {/* Real Results Preview */}
+      <section className="w-full px-6 md:px-16 lg:px-24 py-16 lg:py-20 bg-secondary/30">
+        <div className="max-w-4xl mx-auto text-center mb-10">
+          <span className="text-gold font-semibold tracking-widest uppercase text-sm">See Our Results</span>
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mt-3">Real Patient Outcomes</h2>
+        </div>
+        <div className="max-w-4xl mx-auto grid grid-cols-2 gap-6">
+          <div className="rounded-2xl overflow-hidden shadow-xl">
+            <img src={caseScalingAfter} alt="Scaling result" className="w-full aspect-[4/3] object-cover" loading="lazy" />
+            <div className="bg-card p-4 text-center">
+              <p className="font-display font-bold text-foreground">Scaling & Polishing</p>
+              <p className="text-muted-foreground text-sm">After Treatment</p>
+            </div>
+          </div>
+          <div className="rounded-2xl overflow-hidden shadow-xl">
+            <img src={caseBondingAfter} alt="Bonding result" className="w-full aspect-[4/3] object-cover" loading="lazy" />
+            <div className="bg-card p-4 text-center">
+              <p className="font-display font-bold text-foreground">Dental Bonding</p>
+              <p className="text-muted-foreground text-sm">After Treatment</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* All Categories Grid */}
-      <section className="w-full bg-secondary/30 px-6 md:px-16 lg:px-24 py-16 lg:py-24">
+      <section className="w-full px-6 md:px-16 lg:px-24 py-16 lg:py-24">
         <div className="text-center mb-14">
           <span className="text-gold font-semibold tracking-widest uppercase text-sm">Explore</span>
           <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mt-3">All Treatment Categories</h2>

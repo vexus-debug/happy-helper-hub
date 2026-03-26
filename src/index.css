@@ -6,23 +6,23 @@
 
 @layer base {
   :root {
-    --background: 160 20% 97%;
-    --foreground: 200 25% 15%;
+    --background: 210 25% 97%;
+    --foreground: 215 30% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 200 25% 15%;
+    --card-foreground: 215 30% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 200 25% 15%;
+    --popover-foreground: 215 30% 12%;
 
-    --primary: 174 63% 30%;
+    --primary: 212 72% 42%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 174 25% 92%;
-    --secondary-foreground: 174 63% 25%;
+    --secondary: 212 30% 93%;
+    --secondary-foreground: 212 72% 35%;
 
-    --muted: 160 15% 94%;
-    --muted-foreground: 200 10% 45%;
+    --muted: 210 20% 94%;
+    --muted-foreground: 215 15% 45%;
 
     --accent: 38 75% 55%;
     --accent-foreground: 0 0% 100%;
@@ -30,17 +30,17 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 174 15% 88%;
-    --input: 174 15% 88%;
-    --ring: 174 63% 30%;
+    --border: 212 20% 88%;
+    --input: 212 20% 88%;
+    --ring: 212 72% 42%;
 
     --radius: 0.75rem;
 
-    --hero-gradient: linear-gradient(135deg, hsl(174 63% 30%), hsl(195 70% 25%));
+    --hero-gradient: linear-gradient(135deg, hsl(212 72% 42%), hsl(215 65% 28%));
     --gold: 38 75% 55%;
     --gold-light: 38 60% 75%;
-    --teal-deep: 195 70% 20%;
-    --teal-light: 174 40% 95%;
+    --blue-deep: 215 65% 18%;
+    --blue-light: 212 40% 96%;
 
     --font-display: 'Playfair Display', serif;
     --font-body: 'DM Sans', sans-serif;
@@ -74,8 +74,8 @@
     font-family: var(--font-display);
   }
   ::selection {
-    background: hsl(174 63% 30% / 0.2);
-    color: hsl(200 25% 15%);
+    background: hsl(212 72% 42% / 0.2);
+    color: hsl(215 30% 12%);
   }
 }
 
@@ -97,7 +97,7 @@
     @apply bg-card/70 backdrop-blur-xl border border-border/50;
   }
   .glass-dark {
-    background: hsl(var(--foreground) / 0.6);
+    background: hsl(215 65% 18% / 0.7);
     backdrop-filter: blur(20px);
     border: 1px solid hsl(0 0% 100% / 0.08);
   }

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Phone, MapPin, Clock, Instagram } from "lucide-react";
 
 const Footer = () => (
-  <footer className="bg-teal-deep text-primary-foreground">
+  <footer className="bg-blue-deep text-primary-foreground">
     <div className="container mx-auto section-padding">
       <div className="grid md:grid-cols-4 gap-10">
         <div>

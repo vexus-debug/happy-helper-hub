@@ -53,8 +53,8 @@ export default {
         },
         gold: "hsl(var(--gold))",
         "gold-light": "hsl(var(--gold-light))",
-        "teal-deep": "hsl(var(--teal-deep))",
-        "teal-light": "hsl(var(--teal-light))",
+        "blue-deep": "hsl(var(--blue-deep))",
+        "blue-light": "hsl(var(--blue-light))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
