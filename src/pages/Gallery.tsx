@@ -20,6 +20,8 @@ import caseWhiteningBefore from "@/assets/case-whitening-before.jpg";
 import caseBondingAfter from "@/assets/case-bonding-after.jpg";
 import caseFillingBefore from "@/assets/case-filling-before.jpg";
 import caseFillingAfter from "@/assets/case-filling-after.jpg";
+import caseDeepCleaningBefore from "@/assets/case-deep-cleaning-before.jpg";
+import caseDeepCleaningAfter from "@/assets/case-deep-cleaning-after.jpg";
 
 const images = [
   { src: clinicReception, label: "Clinic Reception Area", category: "clinic" },
@@ -40,6 +42,8 @@ const images = [
   { src: caseBondingAfter, label: "Dental Bonding — After", category: "cases" },
   { src: caseFillingBefore, label: "Dental Filling — Before", category: "cases" },
   { src: caseFillingAfter, label: "Dental Filling — After", category: "cases" },
+  { src: caseDeepCleaningBefore, label: "Deep Cleaning — Before", category: "cases" },
+  { src: caseDeepCleaningAfter, label: "Deep Cleaning — After", category: "cases" },
 ];
 
 const Gallery = () => {

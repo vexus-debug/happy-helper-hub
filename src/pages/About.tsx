@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import clinicImg from "@/assets/clinic-reception.webp";
 import clinicInterior from "@/assets/clinic-interior.webp";
+import caseWhiteningAfter from "@/assets/case-whitening-after.jpg";
 import { Star, Users, Award, Heart, MapPin, Calendar, Shield, Sparkles, Phone } from "lucide-react";
 
 const milestones = [
@@ -23,7 +24,7 @@ const About = () => (
     <section className="relative min-h-[70vh] flex items-center overflow-hidden">
       <div className="absolute inset-0">
         <img src={clinicInterior} alt="Our modern dental clinic" className="w-full h-full object-cover" loading="eager" />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-teal-deep/90 to-primary/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-blue-deep/90 to-primary/70" />
       </div>
       <div className="relative z-10 w-full px-6 md:px-16 lg:px-24 py-20">
         <div className="max-w-3xl">
@@ -50,25 +51,30 @@ const About = () => (
       </div>
     </section>
 
-    {/* Who We Are - Full width, no image */}
+    {/* Who We Are */}
     <section className="w-full px-6 md:px-16 lg:px-24 py-16 lg:py-28">
-      <div className="max-w-4xl mx-auto">
-        <span className="text-gold font-semibold tracking-widest uppercase text-sm">Who We Are</span>
-        <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mt-3 mb-8">
-          A Clinic Built on Trust & Care
-        </h2>
-        <div className="space-y-5 text-muted-foreground leading-relaxed text-base md:text-lg">
-          <p>Our Lady's Dental Clinic is a high-rated dental facility located in Effurun, Delta State. Known for our professional yet friendly staff, we are situated in a central, accessible shopping complex.</p>
-          <p>We offer a comprehensive range of oral health services — from preventive care and cosmetic dentistry to orthodontics and surgical procedures. Our team takes the time to explain every procedure, answer questions patiently, and ensure each patient leaves with a confident smile.</p>
-          <p>With 5-star patient ratings, flexible payment options, and a welcoming atmosphere, we strive to be the dental clinic of choice for families across Delta State.</p>
+      <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span className="text-gold font-semibold tracking-widest uppercase text-sm">Who We Are</span>
+          <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mt-3 mb-8">
+            A Clinic Built on Trust & Care
+          </h2>
+          <div className="space-y-5 text-muted-foreground leading-relaxed text-base md:text-lg">
+            <p>Our Lady's Dental Clinic is a high-rated dental facility located in Effurun, Delta State. Known for our professional yet friendly staff, we are situated in a central, accessible shopping complex.</p>
+            <p>We offer a comprehensive range of oral health services — from preventive care and cosmetic dentistry to orthodontics and surgical procedures.</p>
+          </div>
+          <div className="flex flex-wrap gap-4 mt-8">
+            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary text-sm text-foreground font-medium">
+              <MapPin className="w-4 h-4 text-primary" /> Effurun, Delta State
+            </div>
+            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary text-sm text-foreground font-medium">
+              <Calendar className="w-4 h-4 text-primary" /> Mon – Sat, 8am – 6pm
+            </div>
+          </div>
         </div>
-        <div className="flex flex-wrap gap-4 mt-8">
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary text-sm text-foreground font-medium">
-            <MapPin className="w-4 h-4 text-primary" /> Effurun, Delta State
-          </div>
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary text-sm text-foreground font-medium">
-            <Calendar className="w-4 h-4 text-primary" /> Mon – Sat, 8am – 6pm
-          </div>
+        <div className="relative">
+          <div className="absolute -top-4 -right-4 w-full h-full bg-primary/10 rounded-3xl" />
+          <img src={caseWhiteningAfter} alt="Happy patient with whitened teeth" className="relative rounded-3xl shadow-2xl w-full object-cover aspect-square" loading="lazy" />
         </div>
       </div>
     </section>
