@@ -317,23 +317,23 @@ const Index = () => {
         </Section>
       </section>
 
-      {/* ════════════════════ MEET THE DOCTOR ════════════════════ */}
+      {/* ════════════════════ OUR CLINIC ════════════════════ */}
       <section className="px-4 md:px-8 lg:px-16 py-20 lg:py-28 overflow-hidden">
         <Section>
           <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-3">Meet Your Dentist</p>
+              <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-3">Our Clinic</p>
               <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground leading-tight mb-6">
-                In <span className="text-gradient">Expert Hands</span>
+                A Space Built for <span className="text-gradient">Your Comfort</span>
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                With over a decade of experience in general and cosmetic dentistry, our lead dentist combines clinical precision with a genuine passion for patient care. Every treatment plan is crafted with your unique needs in mind.
+                Our modern facility is designed with your comfort in mind — from the calming reception area to our fully equipped treatment rooms. Every detail ensures a stress-free dental experience.
               </p>
               <div className="space-y-3 mb-8">
                 {[
-                  "Extensive post-graduate training in cosmetic & restorative dentistry",
-                  "Committed to continuous learning and adopting latest techniques",
-                  "Known for a calm, reassuring chair-side manner",
+                  "State-of-the-art equipment & sterilisation protocols",
+                  "Welcoming, family-friendly environment",
+                  "Centrally located on Airport Road, Effurun — easy to find",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
@@ -341,21 +341,21 @@ const Index = () => {
                   </div>
                 ))}
               </div>
-              <a href="tel:+2349022211645" className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all">
-                <CalendarCheck className="w-5 h-5" /> Book a Consultation <ArrowRight className="w-4 h-4" />
-              </a>
+              <Link to="/gallery" className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all">
+                <Sparkles className="w-5 h-5" /> View Our Gallery <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
             <div className="order-1 lg:order-2 relative">
               <div className="absolute -bottom-6 -right-6 w-full h-full bg-gold/10 rounded-3xl" />
-              <img src={dentistImg} alt="Our lead dentist" className="relative rounded-3xl shadow-2xl w-full object-cover aspect-[3/4]" loading="lazy" />
+              <img src={clinicInterior} alt="Our modern dental clinic interior" className="relative rounded-3xl shadow-2xl w-full object-cover aspect-[3/4]" loading="lazy" />
               <div className="absolute -bottom-4 -left-4 glass rounded-2xl shadow-xl p-4">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-gold/15 flex items-center justify-center">
                     <Award className="w-5 h-5 text-gold" />
                   </div>
                   <div>
-                    <p className="font-display font-bold text-foreground text-sm">10+ Years</p>
-                    <p className="text-muted-foreground text-xs">of Excellence</p>
+                    <p className="font-display font-bold text-foreground text-sm">5-Star Rated</p>
+                    <p className="text-muted-foreground text-xs">by Our Patients</p>
                   </div>
                 </div>
               </div>
