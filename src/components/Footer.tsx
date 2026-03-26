@@ -36,6 +36,9 @@ const Footer = () => (
             <a href="tel:+2349022211645" className="flex items-center gap-2 hover:text-gold transition-colors">
               <Phone className="w-4 h-4" /> +234 902 221 1645
             </a>
+            <a href="tel:+2348062989492" className="flex items-center gap-2 hover:text-gold transition-colors">
+              <Phone className="w-4 h-4" /> +234 806 298 9492
+            </a>
             <div className="flex items-start gap-2">
               <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
               <span>Top Floor, Our Lady's Shopping Mall, 100 Airport Road, Effurun, Delta State</span>
@@ -50,7 +53,7 @@ const Footer = () => (
           <h4 className="font-display text-base font-semibold mb-4 text-gold">Hours</h4>
           <div className="flex flex-col gap-2 text-sm text-primary-foreground/70">
             <div className="flex items-center gap-2"><Clock className="w-4 h-4" /> Mon – Fri: 9AM – 5PM</div>
-            <div className="ml-6">Saturday: 10AM – 4PM</div>
+            <div className="ml-6">Saturday: 8AM – 4PM</div>
             <div className="ml-6">Sunday: Closed</div>
           </div>
         </div>
