@@ -37,7 +37,7 @@ const Navbar = () => {
             </Link>
           ))}
           <a
-            href="tel:+2349022211645"
+            href="tel:+2348062989492"
             className="bg-hero-gradient text-primary-foreground px-5 py-2.5 rounded-full text-sm font-semibold flex items-center gap-2 hover:opacity-90 transition-opacity"
           >
             <Phone className="w-4 h-4" /> Book Now
@@ -65,7 +65,7 @@ const Navbar = () => {
               </Link>
             ))}
             <a
-              href="tel:+2349022211645"
+              href="tel:+2348062989492"
               className="bg-hero-gradient text-primary-foreground px-5 py-3 rounded-full text-sm font-semibold flex items-center justify-center gap-2"
             >
               <Phone className="w-4 h-4" /> Book Now

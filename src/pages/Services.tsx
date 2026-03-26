@@ -201,7 +201,7 @@ const Services = () => {
                       </div>
 
                       <a
-                        href={`https://wa.me/2349022211645?text=${encodeURIComponent(`Hello! I'd like to book an appointment for ${item.name}. Please let me know available times.`)}`}
+                        href={`https://wa.me/2348062989492?text=${encodeURIComponent(`Hello! I'd like to book an appointment for ${item.name}. Please let me know available times.`)}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-semibold text-sm hover:opacity-90 transition-opacity group-hover:shadow-lg"
@@ -325,13 +325,13 @@ const Services = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+2349022211645"
+                href="tel:+2348062989492"
                 className="bg-gold-shimmer text-foreground px-10 py-4 rounded-full font-semibold inline-flex items-center justify-center gap-2 hover:opacity-90 transition-opacity"
               >
                 <Phone className="w-5 h-5" /> Call Now
               </a>
               <a
-                href={`https://wa.me/2349022211645?text=${encodeURIComponent("Hello! I'd like to schedule a consultation. Please let me know available times.")}`}
+                href={`https://wa.me/2348062989492?text=${encodeURIComponent("Hello! I'd like to schedule a consultation. Please let me know available times.")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary-foreground/10 border border-primary-foreground/30 text-primary-foreground px-10 py-4 rounded-full font-semibold inline-flex items-center justify-center gap-2 hover:bg-primary-foreground/20 transition-colors"

@@ -45,7 +45,7 @@ const Privacy = () => (
 
           <div>
             <h3 className="font-display text-xl font-semibold text-foreground mb-2">Contact Us</h3>
-            <p>If you have any questions about this privacy policy, please contact us at <a href="tel:+2349022211645" className="text-primary font-semibold hover:underline">+234 902 221 1645</a> or visit our clinic at Top Floor, Our Lady's Shopping Mall, 100 Airport Road, Effurun, Delta State.</p>
+            <p>If you have any questions about this privacy policy, please contact us at <a href="tel:+2348062989492" className="text-primary font-semibold hover:underline">+234 806 298 9492</a> or <a href="tel:+2349022211645" className="text-primary font-semibold hover:underline">+234 902 221 1645</a>, or visit our clinic at Top Floor, Our Lady's Shopping Mall, 100 Airport Road, Effurun, Delta State.</p>
           </div>
         </div>
       </div>

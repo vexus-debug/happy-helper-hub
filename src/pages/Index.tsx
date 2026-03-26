@@ -185,7 +185,7 @@ const Index = () => {
               Step into a world where cutting-edge dentistry meets genuine care. We don't just treat teeth — we transform confidence.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href="tel:+2349022211645" className="group bg-gold-shimmer text-foreground px-8 py-4 rounded-full font-semibold flex items-center gap-2 hover:scale-105 transition-all shadow-lg shadow-gold/25 active:scale-95">
+              <a href="tel:+2348062989492" className="group bg-gold-shimmer text-foreground px-8 py-4 rounded-full font-semibold flex items-center gap-2 hover:scale-105 transition-all shadow-lg shadow-gold/25 active:scale-95">
                 <Phone className="w-5 h-5 group-hover:animate-pulse" /> Book Your Visit
               </a>
               <button
@@ -651,8 +651,8 @@ const Index = () => {
               <div className="space-y-4 mb-8">
                 {[
                   { icon: MapPin, label: "Top Floor, Our Lady's Shopping Mall, 100 Airport Road, Effurun" },
-                  { icon: Phone, label: "+234 902 221 1645" },
-                  { icon: Clock, label: "Mon–Fri: 9AM–5PM · Sat: 10AM–4PM" },
+                  { icon: Phone, label: "+234 902 221 1645 / +234 806 298 9492" },
+                  { icon: Clock, label: "Mon–Fri: 9AM–5PM · Sat: 8AM–4PM" },
                 ].map((item) => (
                   <div key={item.label} className="flex items-start gap-4">
                     <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
@@ -702,10 +702,10 @@ const Index = () => {
                 Your perfect smile is just one call away. Book your appointment today and let us take care of the rest.
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
-                <a href="tel:+2349022211645" className="group bg-gold-shimmer text-foreground px-10 py-4 rounded-full font-semibold inline-flex items-center gap-2 text-lg hover:scale-105 active:scale-95 transition-all shadow-lg shadow-gold/25">
+                <a href="tel:+2348062989492" className="group bg-gold-shimmer text-foreground px-10 py-4 rounded-full font-semibold inline-flex items-center gap-2 text-lg hover:scale-105 active:scale-95 transition-all shadow-lg shadow-gold/25">
                   <Phone className="w-5 h-5 group-hover:animate-pulse" /> Call Now
                 </a>
-                <a href="https://wa.me/2349022211645" target="_blank" rel="noopener noreferrer" className="glass-dark text-primary-foreground px-8 py-4 rounded-full font-semibold hover:bg-primary-foreground/15 transition-all inline-flex items-center gap-2 active:scale-95">
+                <a href="https://wa.me/2348062989492" target="_blank" rel="noopener noreferrer" className="glass-dark text-primary-foreground px-8 py-4 rounded-full font-semibold hover:bg-primary-foreground/15 transition-all inline-flex items-center gap-2 active:scale-95">
                   <MessageCircle className="w-5 h-5" /> WhatsApp Us
                 </a>
               </div>
